@@ -11,7 +11,7 @@
 获取解密后的数据的方法：
 
 1. 安装 Node.js（废话……）
-1. 先向微信请求 `session_key`（代码中已有 `wx.login`，可用 Postman 等工具进行模拟请求，具体获取方法见 [这里](https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html)）。
+1. 先向微信请求 `session_key`（代码中已有 `wx.login` 调试输出 `code` 的步骤，可用 Postman 等工具进行模拟请求，具体获取方法见 [这里](https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html)）。
 2. 将加密数据、`session_key`、小程序 `appid` 等信息填入 `Node` 文件夹中的 `demo.js` 文件相应的部分。
 3. 使用终端（Terminal）进入 `Node` 文件夹，执行 `node demo.js` 即可。
 
